@@ -1,0 +1,50 @@
+﻿$cor-vermelha: red;
+$cor-azul: blue;
+
+$colors: ("vermelho",$cor-vermelha), ("azul", $cor-azul);
+
+.set {
+    @each $color in $colors {
+        &-#{nth($color,1)} {
+
+            .button-action {
+                border-color: #f7f7f7;
+                .texto {
+                    span {
+                        color: #f7f7f7;
+                    }
+                }
+
+                .ball {
+                    .settings-ball {
+                        border: 1px solid #fff;
+                    }
+
+                    .whatsapp {
+                        fill: #0000ef;
+                    }
+
+                    .seta {
+                        stroke: #f7f7f7;
+                    }
+                }
+            }
+
+            .button-action:hover {
+                .ball {
+                    .settings-ball {
+                        background-color: #f7f7f7;
+                    }
+                }
+            }
+
+            #video {
+                background-color: nth($color,2);
+            }
+
+            #call-to {
+                background-color: nth($color,2);
+            }
+        }
+    }
+}
