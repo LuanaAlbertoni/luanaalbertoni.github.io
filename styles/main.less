@@ -69,11 +69,15 @@ ul {
         .settings-ball {
             width: 36px;
             height: 36px;
-            background-image: url('../images/whatsapp.png');
             background-size: 30px 30px;
             background-repeat: no-repeat;
             background-position: center center;
             border-radius: 100%;
+
+            svg {
+                fill: #fff;
+            }
+
 
             .position-icon {
                 height: 100%;
@@ -83,15 +87,6 @@ ul {
                 justify-content: center;
             }
         }
-        /*     .whatsapp {
-            display: none;
-            fill: #0000ef;
-        }
-
-        .seta {
-            display: block;
-            stroke: #f7f7f7;
-        }*/
     }
 }
 
@@ -116,7 +111,9 @@ ul {
         right: 81%;
 
         .settings-ball {
-            background-image: url('../images/whatsapp.png');
+            svg {
+                fill: green;
+            }
         }
     }
 }
@@ -219,15 +216,20 @@ header {
         }
 
         a {
-            border: 3px solid #fff;
             display: block;
             border-radius: 5px;
-            background-color: #fff;
+
+            svg {
+                fill: #fff;
+            }
+
         }
 
         a:hover {
-            background-color: #fe7c00;
-            border: 3px solid #fe7c00;
+            svg {
+                fill: #fe7c00;
+            }
+
         }
     }
 }

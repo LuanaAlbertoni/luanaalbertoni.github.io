@@ -98,24 +98,17 @@ ul {
   position: absolute;
   right: 8px;
   -webkit-transition: 0.2s linear;
-  /*     .whatsapp {
-            display: none;
-            fill: #0000ef;
-        }
-
-        .seta {
-            display: block;
-            stroke: #f7f7f7;
-        }*/
 }
 .button-action .ball .settings-ball {
   width: 36px;
   height: 36px;
-  background-image: url('../images/whatsapp.png');
   background-size: 30px 30px;
   background-repeat: no-repeat;
   background-position: center center;
   border-radius: 100%;
+}
+.button-action .ball .settings-ball svg {
+  fill: #fff;
 }
 .button-action .ball .settings-ball .position-icon {
   height: 100%;
@@ -137,8 +130,8 @@ ul {
   transition: 0.2s linear;
   right: 81%;
 }
-.button-action:hover .ball .settings-ball {
-  background-image: url('../images/whatsapp.png');
+.button-action:hover .ball .settings-ball svg {
+  fill: green;
 }
 @keyframes piscar {
   from {
@@ -217,14 +210,14 @@ header ul li + li {
   margin-left: 28px;
 }
 #about .midias a {
-  border: 3px solid #fff;
   display: block;
   border-radius: 5px;
-  background-color: #fff;
 }
-#about .midias a:hover {
-  background-color: #fe7c00;
-  border: 3px solid #fe7c00;
+#about .midias a svg {
+  fill: #fff;
+}
+#about .midias a:hover svg {
+  fill: #fe7c00;
 }
 #knowledges {
   padding-top: 80px;
