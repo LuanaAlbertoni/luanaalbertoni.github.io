@@ -515,7 +515,7 @@ footer a:hover svg {
     flex-direction: column;
   }
   #sobre h1 {
-    font-size: 38px;
+    font-size: 32px;
   }
   #sobre h1 span {
     font-weight: 700;
@@ -523,6 +523,7 @@ footer a:hover svg {
   #sobre .infos {
     text-align: center;
     margin-top: 20px;
+    margin-left: 0;
   }
   #sobre .infos .texto {
     text-align: justify;
