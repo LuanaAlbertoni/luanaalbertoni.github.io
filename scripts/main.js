@@ -27,7 +27,7 @@ $(document).ready(function () {
 
     $('.owl-sites').owlCarousel({
         loop: true,
-        margin: 10,
+        margin: 24,
         nav: true,
         navText: ["<img src='images/esquerda.png'>", "<img src='images/direita.png'  class='block'>"],
         dots: false,

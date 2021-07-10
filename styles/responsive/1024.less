@@ -1,0 +1,86 @@
+﻿.block-bar {
+    display: flex;
+}
+
+
+header {
+    .menu {
+        display: none;
+    }
+}
+
+#sobre {
+    .main-container {
+        flex-direction: column;
+    }
+
+
+    h1 {
+        font-size: 38px;
+
+        span {
+            font-weight: 700;
+        }
+    }
+
+    .infos {
+        text-align: center;
+        margin-top: 20px;
+
+        .texto {
+            text-align: justify;
+        }
+    }
+
+    .image {
+        max-width: 323px;
+        height: 323px;
+    }
+}
+
+#conhecimentos {
+    .content-conhecimentos {
+        flex-direction: column;
+        align-items: center;
+
+        .mobile + .mobile {
+            margin-left: 0;
+            margin-top: 24px;
+        }
+    }
+}
+
+.section-flex {
+    .main-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #idiomas {
+        width: 100%;
+
+        .content-idiomas {
+            display: flex;
+            flex-wrap: wrap;
+
+/*            .info-idioma + .info-idioma {
+                margin-left: 0;
+            }*/
+        }
+
+        .info-idioma {
+            margin: 20px;
+        }
+    }
+
+    #hobbies {
+        width: 100%;
+        padding-top: 20px;
+    }
+}
+
+footer {
+    .main-container {
+        justify-content: center;
+    }
+}

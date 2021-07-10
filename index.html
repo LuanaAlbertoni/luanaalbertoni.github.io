@@ -63,7 +63,30 @@
 
 <body>
 
-    <header>
+
+    <div class="menu-container">
+        <div class="full-page"></div>
+        <div class="menu-responsive" id="menu-responsive">
+            <div class="fechar">
+                <svg id="fechar-menu-mobile" enable-background="new 0 0 512.001 512.001" height="512" viewBox="0 0 512.001 512.001" width="512"><g><path d="m512.001 84.853-84.853-84.853-171.147 171.147-171.148-171.147-84.853 84.853 171.148 171.147-171.148 171.148 84.853 84.853 171.148-171.147 171.147 171.147 84.853-84.853-171.148-171.148z" /></g></svg>
+            </div>
+
+            <div class="nav-menu">
+                <ul>
+                    <li><a href="index.html" class="text-section">Início</a></li>
+                    <li><a href="sobre.html" class="text-section">Sobre nós</a></li>
+                    <li><a href="servicos.html" class="text-section">Serviços</a></li>
+                    <li><a href="blog.html" class="text-section">Blog</a></li>
+                    <li><a href="contato.html" class="text-section">Contato</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <header id="header">
         <div class="main-container">
             <div class="nome">
                 <a href="">Luana Albertoni</a>
@@ -71,12 +94,18 @@
 
             <div class="menu">
                 <ul>
-                    <li><a href="">Conhecimentos</a></li>
-                    <li><a href="">Idiomas</a></li>
-                    <li><a href="">Hobbies</a></li>
-                    <li><a href="">Experiência Profissional</a></li>
-                    <li><a href="">Portifólio</a></li>
+                    <li><a href="#conhecimentos">Conhecimentos</a></li>
+                    <li><a href="#idiomas">Idiomas</a></li>
+                    <li><a href="#hobbies">Hobbies</a></li>
+                    <li><a href="#experiencia">Experiência Profissional</a></li>
+                    <li><a href="#portfolio">Portifólio</a></li>
                 </ul>
+            </div>
+
+            <div class="block-bar">
+                <div></div>
+                <div></div>
+                <div></div>
             </div>
         </div>
     </header>
@@ -90,7 +119,7 @@
             <div class="infos">
                 <p>Front-end Developer</p>
                 <h1 class="tituloAnimado"><!--sobre <span>Luana Albertoni</span>--></h1>
-                <p>Olá! Meu nome é Luana, tenho 25 anos e nasci em Buenos Aires, Argentina, embora moro em Londrina, PR. Após vários anos trabalhando como especialista em cafés, no final de 2019, optei por iniciar um processo de transição de carreira, atualmente trabalho como estagiária de desenvolvimento front-end, aplicando tecnologias como JavaScript, HTML e CSS.</p>
+                <p class="texto">Olá! Meu nome é Luana, tenho 25 anos e nasci em Buenos Aires, Argentina, embora moro em Londrina, PR. Após vários anos trabalhando como especialista em cafés, no final de 2019, optei por iniciar um processo de transição de carreira, atualmente trabalho como estagiária de desenvolvimento front-end, aplicando tecnologias como JavaScript, HTML e CSS.</p>
 
                 <div class="links">
                     <a href="https://api.whatsapp.com/send?l=pt_BR&phone=554384350369" target="_blank">
@@ -109,7 +138,7 @@
 
                     <a href="https://github.com/LuanaAlbertoni" target="_blank">
                         <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M17.9983 0.5C8.05881 0.5 0 8.55881 0 18.5005C0 26.4533 5.15706 33.1993 12.3098 35.5806C13.2104 35.7453 13.5385 35.1895 13.5385 34.7121C13.5385 34.2856 13.5231 33.1529 13.5142 31.6512C8.50744 32.7386 7.45106 29.2379 7.45106 29.2379C6.63225 27.1594 5.4521 26.6058 5.4521 26.6058C3.8178 25.4886 5.57586 25.5107 5.57586 25.5107C7.38255 25.6389 8.33285 27.366 8.33285 27.366C9.93843 30.1164 12.5462 29.3219 13.5717 28.8622C13.7352 27.6986 14.1993 26.9052 14.7143 26.4555C10.7175 26.0013 6.51512 24.4565 6.51512 17.5591C6.51512 15.5944 7.2168 13.9877 8.36821 12.7291C8.18257 12.2738 7.56487 10.4439 8.54391 7.96542C8.54391 7.96542 10.0556 7.48143 13.4943 9.81078C14.9297 9.41187 16.4701 9.21187 18.0006 9.20524C19.5288 9.21187 21.0692 9.41187 22.5068 9.81078C25.9433 7.48143 27.4517 7.96542 27.4517 7.96542C28.434 10.4439 27.8163 12.2738 27.6307 12.7291C28.7843 13.9877 29.4816 15.5944 29.4816 17.5591C29.4816 24.4742 25.2726 25.9958 21.2625 26.4411C21.909 26.9969 22.4847 28.0953 22.4847 29.7749C22.4847 32.1805 22.4626 34.122 22.4626 34.7121C22.4626 35.1939 22.7863 35.7541 23.7002 35.5784C30.8474 33.1927 36 26.4511 36 18.5005C36 8.55881 27.9401 0.5 17.9983 0.5Z"  />
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M17.9983 0.5C8.05881 0.5 0 8.55881 0 18.5005C0 26.4533 5.15706 33.1993 12.3098 35.5806C13.2104 35.7453 13.5385 35.1895 13.5385 34.7121C13.5385 34.2856 13.5231 33.1529 13.5142 31.6512C8.50744 32.7386 7.45106 29.2379 7.45106 29.2379C6.63225 27.1594 5.4521 26.6058 5.4521 26.6058C3.8178 25.4886 5.57586 25.5107 5.57586 25.5107C7.38255 25.6389 8.33285 27.366 8.33285 27.366C9.93843 30.1164 12.5462 29.3219 13.5717 28.8622C13.7352 27.6986 14.1993 26.9052 14.7143 26.4555C10.7175 26.0013 6.51512 24.4565 6.51512 17.5591C6.51512 15.5944 7.2168 13.9877 8.36821 12.7291C8.18257 12.2738 7.56487 10.4439 8.54391 7.96542C8.54391 7.96542 10.0556 7.48143 13.4943 9.81078C14.9297 9.41187 16.4701 9.21187 18.0006 9.20524C19.5288 9.21187 21.0692 9.41187 22.5068 9.81078C25.9433 7.48143 27.4517 7.96542 27.4517 7.96542C28.434 10.4439 27.8163 12.2738 27.6307 12.7291C28.7843 13.9877 29.4816 15.5944 29.4816 17.5591C29.4816 24.4742 25.2726 25.9958 21.2625 26.4411C21.909 26.9969 22.4847 28.0953 22.4847 29.7749C22.4847 32.1805 22.4626 34.122 22.4626 34.7121C22.4626 35.1939 22.7863 35.7541 23.7002 35.5784C30.8474 33.1927 36 26.4511 36 18.5005C36 8.55881 27.9401 0.5 17.9983 0.5Z" />
                         </svg>
                     </a>
 
@@ -321,8 +350,15 @@
 
             <div class="acc">
                 <div class="click-area">
-                    <h4>Estagiária de Desenvolvimento Front-End <span>@ codie.digital</span></h4>
-                    <p>2020 - atualmente</p>
+                    <div class="texto">
+                        <h4>Desenvolvedora Front-End <span>@ codie.digital</span></h4>
+                        <p>2020 - atualmente</p>
+                    </div>
+
+                    <svg width="16" height="10" viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15.5 0.754975C15.219 0.475599 14.8388 0.318787 14.4425 0.318787C14.0462 0.318787 13.6661 0.475599 13.385 0.754975L8.00001 6.06498L2.69001 0.754975C2.40897 0.475599 2.02879 0.318787 1.63251 0.318787C1.23624 0.318787 0.856058 0.475599 0.575015 0.754975C0.434422 0.89442 0.32283 1.06032 0.246677 1.24311C0.170524 1.4259 0.131317 1.62196 0.131317 1.81998C0.131317 2.01799 0.170524 2.21405 0.246677 2.39684C0.32283 2.57963 0.434422 2.74553 0.575015 2.88498L6.93501 9.24498C7.07446 9.38557 7.24036 9.49716 7.42315 9.57331C7.60594 9.64947 7.802 9.68867 8.00001 9.68867C8.19803 9.68867 8.39409 9.64947 8.57688 9.57331C8.75967 9.49716 8.92557 9.38557 9.06501 9.24498L15.5 2.88498C15.6406 2.74553 15.7522 2.57963 15.8284 2.39684C15.9045 2.21405 15.9437 2.01799 15.9437 1.81998C15.9437 1.62196 15.9045 1.4259 15.8284 1.24311C15.7522 1.06032 15.6406 0.89442 15.5 0.754975Z" fill="#FAFAFA" />
+                    </svg>
+
                 </div>
 
                 <div class="content-experience">
@@ -334,10 +370,185 @@
                 </div>
             </div>
 
+            <div class="acc">
+                <div class="click-area">
+                    <div class="texto">
+                        <h4>Estagiária de Infraestrutura e Gerenciamento de Dados<span> @ Atos</span></h4>
+                        <p>2020</p>
+                    </div>
 
+                    <svg width="16" height="10" viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15.5 0.754975C15.219 0.475599 14.8388 0.318787 14.4425 0.318787C14.0462 0.318787 13.6661 0.475599 13.385 0.754975L8.00001 6.06498L2.69001 0.754975C2.40897 0.475599 2.02879 0.318787 1.63251 0.318787C1.23624 0.318787 0.856058 0.475599 0.575015 0.754975C0.434422 0.89442 0.32283 1.06032 0.246677 1.24311C0.170524 1.4259 0.131317 1.62196 0.131317 1.81998C0.131317 2.01799 0.170524 2.21405 0.246677 2.39684C0.32283 2.57963 0.434422 2.74553 0.575015 2.88498L6.93501 9.24498C7.07446 9.38557 7.24036 9.49716 7.42315 9.57331C7.60594 9.64947 7.802 9.68867 8.00001 9.68867C8.19803 9.68867 8.39409 9.64947 8.57688 9.57331C8.75967 9.49716 8.92557 9.38557 9.06501 9.24498L15.5 2.88498C15.6406 2.74553 15.7522 2.57963 15.8284 2.39684C15.9045 2.21405 15.9437 2.01799 15.9437 1.81998C15.9437 1.62196 15.9045 1.4259 15.8284 1.24311C15.7522 1.06032 15.6406 0.89442 15.5 0.754975Z" fill="#FAFAFA" />
+                    </svg>
 
+                </div>
+
+                <div class="content-experience">
+                    <div class="content-inner">
+                        <p>
+                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="acc">
+                <div class="click-area">
+                    <div class="texto">
+                        <h4>Auxiliar Administrativo <span>@ Bras Chemical</span></h4>
+                        <p>2018 - 2020</p>
+                    </div>
+
+                    <svg width="16" height="10" viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15.5 0.754975C15.219 0.475599 14.8388 0.318787 14.4425 0.318787C14.0462 0.318787 13.6661 0.475599 13.385 0.754975L8.00001 6.06498L2.69001 0.754975C2.40897 0.475599 2.02879 0.318787 1.63251 0.318787C1.23624 0.318787 0.856058 0.475599 0.575015 0.754975C0.434422 0.89442 0.32283 1.06032 0.246677 1.24311C0.170524 1.4259 0.131317 1.62196 0.131317 1.81998C0.131317 2.01799 0.170524 2.21405 0.246677 2.39684C0.32283 2.57963 0.434422 2.74553 0.575015 2.88498L6.93501 9.24498C7.07446 9.38557 7.24036 9.49716 7.42315 9.57331C7.60594 9.64947 7.802 9.68867 8.00001 9.68867C8.19803 9.68867 8.39409 9.64947 8.57688 9.57331C8.75967 9.49716 8.92557 9.38557 9.06501 9.24498L15.5 2.88498C15.6406 2.74553 15.7522 2.57963 15.8284 2.39684C15.9045 2.21405 15.9437 2.01799 15.9437 1.81998C15.9437 1.62196 15.9045 1.4259 15.8284 1.24311C15.7522 1.06032 15.6406 0.89442 15.5 0.754975Z" fill="#FAFAFA" />
+                    </svg>
+
+                </div>
+
+                <div class="content-experience">
+                    <div class="content-inner">
+                        <p>
+                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="acc">
+                <div class="click-area">
+                    <div class="texto">
+                        <h4>Especialista em Café <span>@ Varias Empresas</span></h4>
+                        <p>2014 - 2018</p>
+                    </div>
+
+                    <svg width="16" height="10" viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15.5 0.754975C15.219 0.475599 14.8388 0.318787 14.4425 0.318787C14.0462 0.318787 13.6661 0.475599 13.385 0.754975L8.00001 6.06498L2.69001 0.754975C2.40897 0.475599 2.02879 0.318787 1.63251 0.318787C1.23624 0.318787 0.856058 0.475599 0.575015 0.754975C0.434422 0.89442 0.32283 1.06032 0.246677 1.24311C0.170524 1.4259 0.131317 1.62196 0.131317 1.81998C0.131317 2.01799 0.170524 2.21405 0.246677 2.39684C0.32283 2.57963 0.434422 2.74553 0.575015 2.88498L6.93501 9.24498C7.07446 9.38557 7.24036 9.49716 7.42315 9.57331C7.60594 9.64947 7.802 9.68867 8.00001 9.68867C8.19803 9.68867 8.39409 9.64947 8.57688 9.57331C8.75967 9.49716 8.92557 9.38557 9.06501 9.24498L15.5 2.88498C15.6406 2.74553 15.7522 2.57963 15.8284 2.39684C15.9045 2.21405 15.9437 2.01799 15.9437 1.81998C15.9437 1.62196 15.9045 1.4259 15.8284 1.24311C15.7522 1.06032 15.6406 0.89442 15.5 0.754975Z" fill="#FAFAFA" />
+                    </svg>
+
+                </div>
+
+                <div class="content-experience">
+                    <div class="content-inner">
+                        <p>
+                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
+
+    <section id="portfolio">
+        <div class="main-container">
+            <div class="titulo-section">
+                <h2>Portfólio</h2>
+            </div>
+
+            <div class="owl-theme owl-carousel owl-sites">
+                <div class="item">
+                    <a target="_blank" href="https://elevaobras.com.br/" class="content">
+                        <div class="image">
+                            <img src="images/eleva.jpg" />
+                        </div>
+                        <div class="title">
+                            <p>Eleva</p>
+                        </div>
+                    </a>
+                </div>
+
+
+                <div class="item">
+                    <a target="_blank" href="https://codie.digital/" class="content">
+                        <div class="image">
+                            <img src="images/codie.jpg" />
+                        </div>
+                        <div class="title">
+                            <p>Codie Digital</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="item">
+                    <a target="_blank" href="https://givt.com.br/" class="content">
+                        <div class="image">
+                            <img src="images/givtcard.jpg" />
+                        </div>
+                        <div class="title">
+                            <p>GivtCard</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="item">
+                    <a target="_blank" href="https://www.leanwork.com.br/" class="content">
+                        <div class="image">
+                            <img src="images/leanwork.jpg" />
+                        </div>
+                        <div class="title">
+                            <p>Leanwork</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="item">
+                    <a target="_blank" href="http://nilzasacoman.adv.br/" class="content">
+                        <div class="image">
+                            <img src="images/nilza.jpg" />
+                        </div>
+                        <div class="title">
+                            <p>Nilza Sacoman</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="item">
+                    <a target="_blank" href="https://renovretail.com.br/" class="content">
+                        <div class="image">
+                            <img src="images/renovretail.jpg" />
+                        </div>
+                        <div class="title">
+                            <p>Renov Retail</p>
+                        </div>
+                    </a>
+                </div>
+
+
+                <div class="item">
+                    <a target="_blank" href="https://www.solovepets.com.br/" class="content">
+                        <div class="image">
+                            <img src="images/solove.jpg" />
+                        </div>
+                        <div class="title">
+                            <p>SoLove Pets</p>
+                        </div>
+                    </a>
+                </div>
+
+
+                <div class="item">
+                    <a target="_blank" href="https://illuminasolar.com.br" class="content">
+                        <div class="image">
+                            <img src="images/illumna.jpg" />
+                        </div>
+                        <div class="title">
+                            <p>Illumna</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="main-container">
+            <a href="#header">
+                Voltar para o topo
+                <svg width="16" height="10" viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0.500015 9.24496C0.781058 9.52434 1.16124 9.68115 1.55752 9.68115C1.95379 9.68115 2.33397 9.52434 2.61501 9.24496L8.00002 3.93496L13.31 9.24496C13.5911 9.52434 13.9712 9.68115 14.3675 9.68115C14.7638 9.68115 15.144 9.52434 15.425 9.24496C15.5656 9.10552 15.6772 8.93962 15.7534 8.75683C15.8295 8.57404 15.8687 8.37798 15.8687 8.17996C15.8687 7.98195 15.8295 7.78589 15.7534 7.6031C15.6772 7.42031 15.5656 7.25441 15.425 7.11496L9.06502 0.754964C8.92557 0.614371 8.75967 0.50278 8.57688 0.426627C8.39409 0.350474 8.19803 0.311267 8.00001 0.311267C7.802 0.311267 7.60594 0.350474 7.42315 0.426627C7.24036 0.50278 7.07446 0.614371 6.93501 0.754964L0.500015 7.11496C0.359422 7.25441 0.247831 7.42031 0.171678 7.6031C0.0955246 7.78589 0.0563162 7.98195 0.0563162 8.17996C0.0563163 8.37798 0.0955247 8.57404 0.171678 8.75683C0.247831 8.93962 0.359423 9.10552 0.500015 9.24496Z" />
+                </svg>
+            </a>
+        </div>
+    </footer>
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
